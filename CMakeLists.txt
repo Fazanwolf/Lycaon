@@ -18,8 +18,9 @@ if(WIN32)
     set(${PROJECT_NAME}_ICON cmake/assets/app.rc)
 endif()
 
-add_executable(${PROJECT_NAME}
-    src/main.cpp
+add_executable(${PROJECT_NAME} src/main.cpp
+    src/tests/TestWindow.cpp src/tests/TestAudio.cpp src/tests/TestSprite.cpp
+    src/tests/TestTools.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
